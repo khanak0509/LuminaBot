@@ -3,7 +3,9 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 import os
-os.environ["GOOGLE_API_KEY"] = "AIzaSyA83KimfLvcMNWd7P8PEP7yzNC9V6ZnUDM"
+import dotenv
+dotenv.load_dotenv()
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
     temperature=0,

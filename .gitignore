@@ -1,0 +1,10 @@
+.env
+!.env.example
+image copy 2.png
+image copy 3.png
+image.png
+resume.pdf
+RAG vs Fine-Tuning vs Prompt Engineering_ Optimizing AI Models.mp3
+What is AI Engineering.mp3
+database
+rag
